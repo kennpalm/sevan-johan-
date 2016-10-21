@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{DD761BBA-520F-42A2-A63A-0F3AAEDEFED1}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="XOCV/XOCV/Services/WebApiHelper.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV/Models/ContentModel.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV/Models/ResponseModels/FormModel.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV/Models/ResponseModels/ComplexFormsModel.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV.iOS/Main.cs" Line="13" Column="40" />
+      <File FileName="XOCV/XOCV/Models/ResponseModels/ComplexItem.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV/Models/ResponseModels/Item.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV/PageModels/MenuPageModel.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV/Models/ResponseModels/StoreNumberModel.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV/Models/ResponseModels/PropertyModel.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV/Pages/PollPage.xaml.cs" Line="229" Column="1" />
+      <File FileName="XOCV/XOCV/Models/CaptureModel.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV/Models/ResponseModels/SurveyorModel.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV/PageModels/RegistrationFormPageModel.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV/PageModels/PollPageModel.cs" Line="226" Column="1" />
+      <File FileName="XOCV/XOCV/Pages/RegistrationFormPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV/Services/DataBaseService.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV/Services/ISQLite.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV.iOS/Services/SQLiteIOSService.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV/Pages/MasterDetailPage/MenuPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV/PageModels/FormDetailsPageModel.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV/Pages/FormDetailsPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV/PageModels/MainPageModel.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV.iOS/Renderers/CarouselLayoutRenderer.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV.iOS/Renderers/PollPageRenderer.cs" Line="1" Column="1" />
+      <File FileName="XOCV/XOCV.iOS/Info.plist" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Mobile.XOCV.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86_X86_google_apis" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/petrokovalchuk/xocv_zb/XOCV/XOCV/Pages/FormDetailsPage.xaml.cs" line="16" column="1" />
+      <Breakpoint file="/Users/petrokovalchuk/xocv_zb/XOCV/XOCV/Pages/FormDetailsPage.xaml.cs" line="17" column="1" />
+      <Breakpoint file="/Users/petrokovalchuk/xocv_zb/XOCV/XOCV/PageModels/PollPageModel.cs" line="226" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Mobile.XOCV.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.2a62016fcab9af77a4aa9e9c0b8f2cec913b2194" />
+</Properties>

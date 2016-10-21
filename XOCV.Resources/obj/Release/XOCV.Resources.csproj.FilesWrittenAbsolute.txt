@@ -1,0 +1,12 @@
+/Users/petrokovalchuk/xocv_zb/XOCV.Resources/obj/Release/.NETPortable,Version=v4.5,Profile=Profile111.AssemblyAttribute.cs
+/Users/petrokovalchuk/xocv_zb/XOCV.Resources/obj/Release/XOCV.Resources.XOCVRes.resources
+/Users/petrokovalchuk/xocv_zb/XOCV.Resources/bin/Release/XOCV.Resources.dll.mdb
+/Users/petrokovalchuk/xocv_zb/XOCV.Resources/bin/Release/XOCV.Resources.dll
+/Users/petrokovalchuk/xocv_zb/XOCV.Resources/obj/Release/XOCV.Resources.dll
+/Users/petrokovalchuk/xocv_zb/XOCV.Resources/obj/Release/XOCV.Resources.dll.mdb
+/Users/petrokovalchuk/xocv_zb/XOCV.Resources/bin/Release/Xamarin.Forms.Core.dll
+/Users/petrokovalchuk/xocv_zb/XOCV.Resources/bin/Release/Xamarin.Forms.Platform.dll
+/Users/petrokovalchuk/xocv_zb/XOCV.Resources/bin/Release/Xamarin.Forms.Xaml.dll
+/Users/petrokovalchuk/xocv_zb/XOCV.Resources/bin/Release/Newtonsoft.Json.dll
+/Users/petrokovalchuk/xocv_zb/XOCV.Resources/bin/Release/SQLite.Net.dll
+/Users/petrokovalchuk/xocv_zb/XOCV.Resources/bin/Release/SQLiteNetExtensions.dll
