@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<base:XOCVPage
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:base="clr-namespace:XOCV.Pages.Base;assembly=XOCV"
+  x:Class="XOCV.Pages.FormDetailsPage">
+
+  <StackLayout
+    Padding="20"
+    VerticalOptions="FillAndExpand"
+    HorizontalOptions="FillAndExpand">
+       
+    <StackLayout
+      Spacing="4">
+      <StackLayout
+        Orientation="Horizontal">
+        <Label 
+          Text="Form Name: "
+          FontAttributes="Bold"/>
+        <Label 
+          Text="{Binding AvailableForms.FormsTitle}"/>
+      </StackLayout>
+      <StackLayout
+        Orientation="Horizontal">
+        <Label
+          Text="Form Description: "
+          FontAttributes="Bold"/>
+        <Label 
+          Text="{Binding AvailableForms.Description}"
+          LineBreakMode="WordWrap"/>
+      </StackLayout>
+      <StackLayout
+        Orientation="Horizontal">
+        <Label
+          Text="Instructions: "
+          FontAttributes="Bold"/>
+        <Label 
+          Text="{Binding AvailableForms.Instructions}"/>
+      </StackLayout>
+    </StackLayout>
+    <StackLayout>
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="0.03*"/>
+          <ColumnDefinition Width="0.1*"/>
+          <ColumnDefinition Width="0.17*"/>
+          <ColumnDefinition Width="0.2*"/>
+          <ColumnDefinition Width="0.2*"/>
+          <ColumnDefinition Width="0.2*"/>
+        </Grid.ColumnDefinitions>
+        <Label
+          Text="#"
+          FontAttributes="Bold"/>
+        <Label
+          Grid.Column="1"
+          Text="Date"
+          FontAttributes="Bold"
+          HorizontalOptions="CenterAndExpand"/>
+        <Label
+          Grid.Column="2"
+          Text="Store Number"
+          FontAttributes="Bold"
+          HorizontalOptions="CenterAndExpand"/>
+        <Label
+          Grid.Column="3"
+          Text="Completion Status"
+          FontAttributes="Bold"
+          HorizontalOptions="CenterAndExpand"/>
+        <Label
+          Grid.Column="4"
+          Text="Sync Status"
+          FontAttributes="Bold"
+          HorizontalOptions="CenterAndExpand"/>
+        <Label
+          Grid.Column="5"
+          Text="Options"
+          HorizontalOptions="CenterAndExpand"/>
+      </Grid>
+      <ListView
+        HeightRequest="500"
+        ItemsSource="{Binding AvailableForms.Captures}">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <Grid>
+                <Grid>
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.03*"/>
+                    <ColumnDefinition Width="0.1*"/>
+                    <ColumnDefinition Width="0.17*"/>
+                    <ColumnDefinition Width="0.2*"/>
+                    <ColumnDefinition Width="0.2*"/>
+                    <ColumnDefinition Width="0.2*"/>
+                  </Grid.ColumnDefinitions>
+                  <Label
+                    Text="{Binding Id}"/>
+                  <Label
+                    Grid.Column="1"
+                    Text="{Binding Date}"
+                    HorizontalOptions="CenterAndExpand"/>
+                  <Label
+                    Grid.Column="2"
+                    Text="{Binding StoreNumber}"
+                    HorizontalOptions="CenterAndExpand"/>
+                  <Label
+                    Grid.Column="3"
+                    Text="{Binding FormStatus}"
+                    HorizontalOptions="CenterAndExpand"/>
+                  <Label
+                    Grid.Column="4"
+                    Text="{Binding SyncStatus}"
+                    HorizontalOptions="CenterAndExpand"/>
+                  <StackLayout
+                    Grid.Column="5"
+                    Orientation="Horizontal">
+                    <Button
+                      Text="Edit"
+                      Command="{Binding EditCaptureCommand}"
+                      HorizontalOptions="CenterAndExpand"/>
+                    <Button
+                      Text="Delete"
+                      Command="{Binding DeleteCaptureCommand}"
+                      HorizontalOptions="CenterAndExpand"/>
+                  </StackLayout>
+                </Grid>
+              </Grid>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+    <Button
+      Text="Add New Capture"
+      Command="{Binding AddNewCaptureCommand}"
+      HorizontalOptions="End"
+      VerticalOptions="End"
+      TextColor="White"
+      BackgroundColor="Black"
+      Opacity="0.85"/>
+  </StackLayout>
+  
+</base:XOCVPage>

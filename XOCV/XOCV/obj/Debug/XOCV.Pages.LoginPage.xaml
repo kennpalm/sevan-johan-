@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<base:XOCVPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:XOCV.Pages.Base;assembly=XOCV"
+    x:Class="XOCV.Pages.LoginPage">
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*"></RowDefinition>
+          <RowDefinition Height="2*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" Source="LogoSevan.png" 
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Center"></Image>
+        <Frame Grid.Row="1"
+            x:Name="Login"
+            VerticalOptions="Start"
+            HorizontalOptions="Center"
+            HeightRequest="200"
+            WidthRequest="400"
+            IsVisible="{Binding isAuthorized, Converter={StaticResource InvBoolConverter}}"
+            Opacity="0.85">
+            <StackLayout
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+                <Grid
+                    RowSpacing="10"
+                    ColumnSpacing="10"
+                    Padding="20,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0"
+                           Grid.Column="0"
+                           Text="Login"
+                           VerticalOptions="Center" />
+                    <Entry Grid.Row="0"
+                           Grid.Column="1"
+                           Text="{Binding Login.UserName}"
+                           Placeholder="Username or email"
+                           TextColor="{StaticResource BlackColor}"
+                           PlaceholderColor="{StaticResource GrayColor}" />
+                    <Label Grid.Row="1"
+                           Grid.Column="0"
+                           Text="Password"
+                           VerticalOptions="Center" />
+                    <Entry Grid.Row="1"
+                           Grid.Column="1"
+                           Text="{Binding Login.Password}"
+                           Placeholder="Password"
+                           IsPassword="True"
+                           TextColor="{StaticResource BlackColor}"
+                           PlaceholderColor="{StaticResource GrayColor}" />
+                </Grid>
+
+                <Button Text="Sign In"
+                        Opacity="1"
+                        TextColor="#4fb347"
+                        Command="{Binding LoginCommand}"
+                        FontSize="20" />
+            </StackLayout>
+        </Frame>
+    </Grid>
+</base:XOCVPage>

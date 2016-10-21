@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:XOCVPage 
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:base="clr-namespace:XOCV.Pages.Base;assembly=XOCV"
+  xmlns:views="clr-namespace:XOCV.Views;assembly=XOCV"
+  x:Class="XOCV.Pages.MainPage">
+
+  <ScrollView>
+    <StackLayout
+      Orientation="Vertical"
+      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+      <!--<views:CustomWebView 
+        x:Name="webView" 
+        HorizontalOptions="FillAndExpand" 
+        VerticalOptions="FillAndExpand"/>-->
+      <!--<Image 
+        Source="{Binding Picture}"/>-->
+      <Frame
+        Padding="0"
+        Margin="2"
+        Opacity="0.85"
+        BackgroundColor="White"
+        VerticalOptions="EndAndExpand"
+        HorizontalOptions="EndAndExpand">
+        <Grid>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+          </Grid.ColumnDefinitions>
+          <Button 
+            Text="Take a photo"
+            
+            Margin="10,10,0,10"
+            BackgroundColor="#4fb347"
+            TextColor="White"
+            HorizontalOptions="Start"
+            VerticalOptions="Center"
+            WidthRequest="100"/>
+          <!--Command="{Binding TakePictureCommand}"-->
+          <Button
+            Grid.Column="1"
+            Text="Go to poll"
+            
+            Margin="0,10,10,10"
+            BackgroundColor="#4fb347"
+            TextColor="White"
+            HorizontalOptions="End"
+            VerticalOptions="Center"
+            WidthRequest="100"
+            Command="{Binding GoToPollCommand}"/>
+        </Grid>
+      </Frame>
+    </StackLayout>
+  </ScrollView>
+
+</base:XOCVPage>

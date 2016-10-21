@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<base:XOCVPage 
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:base="clr-namespace:XOCV.Pages.Base;assembly=XOCV"
+  x:Class="XOCV.Pages.PollPage">
+
+  <!--DYNAMIC BUILDING ITEMS-->
+	<Grid>
+		<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>       
+        <RowDefinition/>
+      </Grid.RowDefinitions>
+	<!--<Grid Padding="25, 10, 25, 0" Grid.Row="0">
+      <Grid.ColumnDefinitions>
+		<ColumnDefinition Width="0.50*"/>		
+        <ColumnDefinition Width="0.25*"/>
+        <ColumnDefinition Width="0.25*"/>
+      </Grid.ColumnDefinitions>
+      <Label 
+        Grid.Column="1"
+        HeightRequest="25"
+        Text="Choose page: "
+        HorizontalOptions="EndAndExpand"
+        VerticalOptions="CenterAndExpand"/>
+      <Picker
+        HeightRequest="25"
+        Grid.Column="2"
+        x:Name="formPicker"
+        Title="Choose..."/>
+    </Grid>-->
+  <ScrollView 
+	  Grid.Row="1"
+    x:Name="currentScrollView"
+    IsVisible="{Binding IsAuthorized}"
+    HorizontalOptions="FillAndExpand"
+    VerticalOptions="FillAndExpand"
+    Padding="25, 10, 25, 25">
+    <Frame
+      x:Name="currentFrame"
+      Opacity="0.85"
+      Padding="0">
+      <StackLayout
+        x:Name="currentPage"
+        Style="{StaticResource PollPage}"
+        Padding="25"
+        Spacing="10"/>
+    </Frame>
+  </ScrollView>
+</Grid>
+
+</base:XOCVPage>

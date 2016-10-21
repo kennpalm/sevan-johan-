@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:XOCVPage 
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:base="clr-namespace:XOCV.Pages.Base;assembly=XOCV"
+  xmlns:radioButtons="clr-namespace:XOCV.Views.RadioButtons;assembly=XOCV"
+  xmlns:views="clr-namespace:XOCV.Views;assembly=XOCV"
+  x:Class="XOCV.Pages.RegistrationFormPage">
+
+  <StackLayout
+    Padding="30,60,30,60"
+    Spacing="10">
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="0.25*"/>
+        <ColumnDefinition Width="0.75*"/>
+      </Grid.ColumnDefinitions>
+      <Label 
+        Text="Surveyor name: "/>
+      <Picker
+        Grid.Column="1"
+        x:Name="surveyorPicker"
+        SelectedIndexChanged="SurveyorChanged"
+        Title="Choose..."/>
+    </Grid>
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="0.25*"/>
+        <ColumnDefinition Width="0.75*"/>
+      </Grid.ColumnDefinitions>
+      <Label
+        Text="Email: "/>
+      <Label
+        Grid.Column="1"
+        x:Name="emailLabel"/>
+    </Grid>
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="0.25*"/>
+        <ColumnDefinition Width="0.75*"/>
+      </Grid.ColumnDefinitions>
+      <Label 
+        Text="Date of Survey: "/>
+      <DatePicker 
+        Grid.Column="1"
+        BackgroundColor="White"
+        TextColor="Black"/>
+    </Grid>
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="0.25*"/>
+        <ColumnDefinition Width="0.75*"/>
+      </Grid.ColumnDefinitions>
+      <Label 
+        Text="Store Numbers: "/>
+      <Picker 
+        Grid.Column="1"
+        x:Name="storeNumbersPicker"
+        Title="Choose..."
+        TextColor="Black"
+        BackgroundColor="White"
+        SelectedIndexChanged="StoreNumbersChanged"/>
+    </Grid>
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="0.25*"/>
+        <ColumnDefinition Width="0.75*"/>
+      </Grid.ColumnDefinitions>
+      <Label 
+        Text="City: "/>
+      <Label 
+        Grid.Column="1"
+        x:Name="cityLabel"/>
+    </Grid>
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="0.25*"/>
+        <ColumnDefinition Width="0.75*"/>
+      </Grid.ColumnDefinitions>
+      <Label 
+        Text="State: "/>
+      <Label 
+        Grid.Column="1"
+        x:Name="stateState"/>
+    </Grid>
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="0.25*"/>
+        <ColumnDefinition Width="0.75*"/>
+      </Grid.ColumnDefinitions>
+      <Label 
+        Text="Zip: "/>
+      <Label
+        Grid.Column="1"
+        x:Name="zipLabel"/>
+    </Grid>
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="0.25*"/>
+        <ColumnDefinition Width="0.75*"/>
+      </Grid.ColumnDefinitions>
+      <Label 
+        Text="Contractor: "/>
+      <Label
+        Grid.Column="1"
+        x:Name="contractorLabel"/>
+    </Grid>
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="0.25*"/>
+        <ColumnDefinition Width="0.75*"/>
+      </Grid.ColumnDefinitions>
+      <Label 
+        Text="Branding Package: "/>
+      <radioButtons:BindableRadioGroup
+        x:Name="bindableRadioGroup"
+        Grid.Column="1"/>
+    </Grid>
+    
+    <Button 
+      Text="NEXT"
+      Command="{Binding OpenNewCaptureCommand}"
+      Margin="0,20,0,0"
+      BackgroundColor="Black"
+      TextColor="White"
+      HorizontalOptions="End"
+      WidthRequest="100"
+      VerticalOptions="End"
+      Opacity="0.85"/>
+  </StackLayout>
+
+</base:XOCVPage>
